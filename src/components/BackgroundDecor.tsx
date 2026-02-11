@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { FLOWERS } from '../constants';
 
@@ -7,10 +6,10 @@ const BackgroundDecor: React.FC = () => {
 
   const updateItems = () => {
     const width = window.innerWidth;
-    let count = 25; // Mobile default
-    if (width >= 1536) count = 80; // Ultra-wide
-    else if (width >= 1024) count = 60; // Desktop
-    else if (width >= 768) count = 40; // Tablet
+    let count = 25;
+    if (width >= 1536) count = 80;
+    else if (width >= 1024) count = 60;
+    else if (width >= 768) count = 40;
 
     const newItems = Array.from({ length: count }).map((_, i) => ({
       id: i,

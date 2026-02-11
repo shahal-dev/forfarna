@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 
 interface MovingButtonProps {
@@ -14,7 +13,6 @@ const MovingButton: React.FC<MovingButtonProps> = ({ children, className }) => {
   const moveButton = useCallback(() => {
     if (!buttonRef.current) return;
 
-    // Use a safe margin from the edges
     const margin = 50;
     const vw = window.innerWidth;
     const vh = window.innerHeight;
@@ -23,11 +21,9 @@ const MovingButton: React.FC<MovingButtonProps> = ({ children, className }) => {
     const btnWidth = btnRect.width || 120;
     const btnHeight = btnRect.height || 45;
 
-    // Calculate maximum available space
     const maxX = Math.max(0, vw - btnWidth - margin);
     const maxY = Math.max(0, vh - btnHeight - margin);
 
-    // Random position within safe bounds
     const newX = Math.max(margin, Math.floor(Math.random() * maxX));
     const newY = Math.max(margin, Math.floor(Math.random() * maxY));
 
@@ -44,16 +40,14 @@ const MovingButton: React.FC<MovingButtonProps> = ({ children, className }) => {
     });
   }, []);
 
-  // Handle window resizing - if the button is outside the new bounds, move it back in
   useEffect(() => {
     const handleResize = () => {
       if (!hasMoved || !buttonRef.current) return;
-      
+
       const vw = window.innerWidth;
       const vh = window.innerHeight;
       const rect = buttonRef.current.getBoundingClientRect();
 
-      // If button is now off-screen after resize, move it
       if (rect.right > vw || rect.bottom > vh || rect.left < 0 || rect.top < 0) {
         moveButton();
       }

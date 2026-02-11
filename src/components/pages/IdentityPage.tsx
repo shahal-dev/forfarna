@@ -1,6 +1,7 @@
 import React from 'react';
 import MovingButton from '../MovingButton';
 import { CAT_MEMES } from '../../constants';
+
 interface IdentityPageProps {
   onConfirm: () => void;
 }

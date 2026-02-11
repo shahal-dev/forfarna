@@ -11,9 +11,15 @@ html {
 }
 
 body {
+  font-family: 'Quicksand', sans-serif;
   overflow-x: hidden;
   min-height: 100vh;
   min-height: 100dvh;
+  background-color: #fff5f7;
+}
+
+.font-romantic {
+  font-family: 'Dancing Script', cursive;
 }
 
 /* Prevent text overflow in flex containers */

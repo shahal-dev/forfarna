@@ -1,4 +1,3 @@
-
 export type AppStep = 'IDENTITY' | 'QUIZ' | 'PROPOSAL' | 'SUCCESS';
 
 export type QuizStage = 1 | 2 | 3;
