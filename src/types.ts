@@ -1,6 +1,6 @@
 export type AppStep = 'IDENTITY' | 'QUIZ' | 'PROPOSAL' | 'SUCCESS';
 
-export type QuizStage = 1 | 2 | 3;
+export type QuizStage = 1 | 2 | 3 | 4;
 
 export interface CatMeme {
   url: string;

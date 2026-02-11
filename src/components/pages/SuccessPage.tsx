@@ -1,5 +1,5 @@
 import React from 'react';
-import { CAT_MEMES } from '../../constants';
+import { CAT_BEST_DAY, CAT_BEST_DAY_LEFT, CAT_BEST_DAY_RIGHT } from '../../constants';
 
 interface SuccessPageProps {
   compliments: string[];
@@ -18,7 +18,7 @@ const SuccessPage: React.FC<SuccessPageProps> = ({ compliments, loadingComplimen
       <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 items-start">
         <div className="flex-shrink-0 mx-auto lg:mx-0">
           <div className="relative">
-            <img src={CAT_MEMES[1]} className="w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 rounded-2xl sm:rounded-3xl object-cover shadow-xl border-4 border-white animate-float" alt="" />
+            <img src={CAT_BEST_DAY} className="w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 rounded-2xl sm:rounded-3xl object-cover shadow-xl border-4 border-white animate-float" alt="" />
             <span className="absolute -top-2 -right-2 text-4xl sm:text-5xl animate-wiggle">🎉</span>
           </div>
         </div>
@@ -63,14 +63,14 @@ const SuccessPage: React.FC<SuccessPageProps> = ({ compliments, loadingComplimen
 
       <div className="mt-10 sm:mt-14 pt-8 sm:pt-12 border-t-2 border-pink-100">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
-          <img src={CAT_MEMES[4]} className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-4 border-white shadow-lg -rotate-6 hover:rotate-0 transition-transform" alt="" />
+          <img src={CAT_BEST_DAY_LEFT} className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-4 border-white shadow-lg -rotate-6 hover:rotate-0 transition-transform" alt="" />
           <div className="text-center">
             <p className="text-2xl sm:text-3xl md:text-4xl font-romantic text-rose-500 mb-4">See you on the 14th! 💌</p>
             <div className="flex justify-center gap-6 text-3xl sm:text-4xl animate-pulse">
               <span>🍫</span><span>💎</span><span>💖</span>
             </div>
           </div>
-          <img src={CAT_MEMES[0]} className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-4 border-white shadow-lg rotate-6 hover:rotate-0 transition-transform" alt="" />
+          <img src={CAT_BEST_DAY_RIGHT} className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-4 border-white shadow-lg rotate-6 hover:rotate-0 transition-transform" alt="" />
         </div>
       </div>
     </div>

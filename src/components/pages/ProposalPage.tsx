@@ -13,7 +13,7 @@ const ProposalPage: React.FC<ProposalPageProps> = ({ onYes }) => (
         <div className="relative group mx-auto w-full max-w-[120px] sm:max-w-[180px] md:max-w-[220px] flex-shrink-0">
           <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-tr from-rose-500/20 to-pink-300/20 rounded-2xl blur-xl group-hover:opacity-100 transition-opacity"></div>
           <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-[0_40px_80px_rgba(0,0,0,0.15)] border-4 border-white transition-all duration-700 group-hover:scale-[1.03] aspect-square">
-            <img src={HER_PHOTO_PLACEHOLDER} className="w-full h-full object-cover" alt="" />
+            <img src={"/images/cat_propo.jpg"} className="w-full h-full object-cover" alt="" />
           </div>
           <div className="absolute -bottom-3 -right-3 text-4xl sm:text-5xl animate-pulse drop-shadow-xl z-20 pointer-events-none">🌹</div>
           <div className="absolute -top-3 -left-3 text-4xl sm:text-5xl drop-shadow-xl animate-float z-20 pointer-events-none">😻</div>

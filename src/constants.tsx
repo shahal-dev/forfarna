@@ -6,6 +6,15 @@ export const CAT_MEMES = [
   "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzByYjV5Z3V4Z3V4Z3V4Z3V4Z3V4Z3V4Z3V4Z3V4Z3V4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/ICOgUNoMPvG24/giphy.gif"  // Pop Cat
 ];
 
+// Quiz-specific cat images
+export const CAT_SCIENTIST = "https://media.giphy.com/media/xT77XZrTKOxycjaYvK/giphy.gif"; // Quiz 1: scientifically purr-fect
+export const CAT_HEART_EYES = "https://media.giphy.com/media/Ur8Pu6JxmAo8LJZSJS/giphy.gif"; // Quiz 2: most beautiful
+export const CAT_LOVE = "https://media.giphy.com/media/Pk9n41p2yA7CFGJg60/giphy.gif"; // Quiz 3: promise forever
+export const CAT_FAMILY = "https://media.giphy.com/media/PMfqAVSoWeZ3y/giphy.gif"; // Quiz 4: cat mom/kittens
+export const CAT_BEST_DAY = "https://media.giphy.com/media/hqxmhzhBKUmoZtkziA/giphy.gif"; // Success top: Happy Meow 😸
+export const CAT_BEST_DAY_LEFT = "https://media.giphy.com/media/0hTlmiAkyD9jchqKjO/giphy.gif"; // Success bottom left: Happy Dance
+export const CAT_BEST_DAY_RIGHT = "https://media.giphy.com/media/fP54DyXUV1UzLqcGRD/giphy.gif"; // Success bottom right: Happy I Love You 💖
+
 export const FLOWERS = [
   "🌸", "🌹", "🌺", "🌷", "🌻", "🌼", "💐", "✨", "💖"
 ];

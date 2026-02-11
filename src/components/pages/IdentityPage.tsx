@@ -1,12 +1,11 @@
 import React from 'react';
-import MovingButton from '../MovingButton';
-import { CAT_MEMES } from '../../constants';
 
 interface IdentityPageProps {
   onConfirm: () => void;
+  onNope: () => void;
 }
 
-const IdentityPage: React.FC<IdentityPageProps> = ({ onConfirm }) => (
+const IdentityPage: React.FC<IdentityPageProps> = ({ onConfirm, onNope }) => (
   <div className="bg-white/80 backdrop-blur-xl p-6 sm:p-10 md:p-16 rounded-[2rem] sm:rounded-[3.5rem] shadow-[0_40px_100px_rgba(255,140,160,0.25)] text-center max-w-xl w-full border border-white/80 animate-in zoom-in duration-1000 min-w-0">
     <div className="relative inline-block mb-8 sm:mb-12 group">
       <div className="absolute -inset-4 bg-gradient-to-tr from-pink-400 to-rose-200 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
@@ -25,11 +24,12 @@ const IdentityPage: React.FC<IdentityPageProps> = ({ onConfirm }) => (
         <span className="relative z-10">That&apos;s Me! ❤️</span>
         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity rounded-[1.5rem]"></div>
       </button>
-      <div className="flex items-center justify-center h-16 sm:h-20 min-h-[4rem]">
-        <MovingButton className="bg-white/60 text-gray-400 hover:text-pink-400 border border-dashed border-gray-300 backdrop-blur-sm text-xs sm:text-sm md:text-base">
-          Nope, I&apos;m just a random kitty 😿
-        </MovingButton>
-      </div>
+      <button
+        onClick={onNope}
+        className="bg-white/60 text-gray-400 hover:text-gray-600 hover:bg-white/80 border border-dashed border-gray-300 backdrop-blur-sm text-xs sm:text-sm md:text-base font-medium py-3 px-6 rounded-full transition-all"
+      >
+        Nope, I&apos;m just a random kitty 😿
+      </button>
     </div>
   </div>
 );
