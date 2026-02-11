@@ -10,7 +10,7 @@ const IdentityPage: React.FC<IdentityPageProps> = ({ onConfirm }) => (
   <div className="bg-white/80 backdrop-blur-xl p-6 sm:p-10 md:p-16 rounded-[2rem] sm:rounded-[3.5rem] shadow-[0_40px_100px_rgba(255,140,160,0.25)] text-center max-w-xl w-full border border-white/80 animate-in zoom-in duration-1000 min-w-0">
     <div className="relative inline-block mb-8 sm:mb-12 group">
       <div className="absolute -inset-4 bg-gradient-to-tr from-pink-400 to-rose-200 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
-      <img src={CAT_MEMES[2]} className="relative w-32 h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 object-cover rounded-full mx-auto border-4 sm:border-8 border-white shadow-2xl transition-transform duration-700 group-hover:scale-105" alt="Huh cat" />
+      <img src={'/images/shahal_looking.png'} className="relative w-32 h-32 sm:w-48 sm:h-48 md:w-60 md:h-60 object-cover rounded-full mx-auto border-4 sm:border-8 border-white shadow-2xl transition-transform duration-700 group-hover:scale-105" alt="Huh cat" />
       <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 text-4xl sm:text-6xl md:text-8xl animate-bounce">🧐</div>
     </div>
     <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-pink-600 mb-4 sm:mb-6 font-romantic tracking-tight">Access Denied!</h1>
